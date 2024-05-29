@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+
+module.exports = {
+  content: ["./src/*.{html,js}",
+  "./src/Components/*.{html,jsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
-      },
-      gridTemplateColumns: {
-        '70/30': '70% 28%',
+        sans: ['Poppins]', 'sans-serif'], // Replace 'Roboto' with your desired font family
       },
     },
   },
   plugins: [],
-};
+}
+
